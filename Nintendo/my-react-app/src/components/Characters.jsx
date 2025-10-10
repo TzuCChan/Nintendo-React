@@ -9,5 +9,20 @@ useEffect(() => {
     let uniqueCharacterArray = [...new Map(data.map((char) => [char.character, char])).values()];
     console.log(uniqueCharacterArray)
     setUniqueCharacters(uniqueCharacterArray)    
-  }, [data])
+}, [data])
+  
+  return (
+      <div className='name-container'> 
+        <div className='character-container'>
+          {uniqueCharacters.map((character) => (
+            <div className='characters'>
+              <Link to={`/characters/${character.character}`}>
+                <button className='character-btn'>{character.character}</button>
+              </Link>
+              <img src={character.image} alt={character.name}/>
+            </div>
+          ))}
+        </div>
+      </div>
+  )
 }
