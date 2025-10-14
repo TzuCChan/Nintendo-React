@@ -9,5 +9,15 @@ export default function Character({ data }) {
     useEffect(() => {
     let updatedData = data.filter((char) => char.character.includes(name))
     setFilteredData(updatedData)
-  }, [data, name])
+    }, [data, name])
+  
+    return (
+    <div className="character-container">
+        {filteredData.map((character) => (
+          <div className='image-container'>
+            <img src={character.image} alt={character.name}/>
+          </div>
+        ))}
+    </div>
+  )
 }
