@@ -5,4 +5,9 @@ import './characters.css'
 export default function Character({ data }) {
   const [filteredData, setFilteredData] = useState([])
   let { name } = useParams()
+
+    useEffect(() => {
+    let updatedData = data.filter((char) => char.character.includes(name))
+    setFilteredData(updatedData)
+  }, [data, name])
 }
