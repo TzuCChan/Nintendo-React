@@ -16,4 +16,8 @@ function App() {
     );
     setData(response.data.amiibo);
   };
+
+    useEffect(() => {
+    getData();
+  }, []);
 }
