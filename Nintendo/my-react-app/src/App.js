@@ -19,5 +19,16 @@ function App() {
 
     useEffect(() => {
     getData();
-  }, []);
+    }, []);
+  
+  return (
+    <div className="App">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/characters" element={<Characters data={data} />} />
+        <Route path="/characters/:name" element={<Character data={data} />} />
+      </Routes>
+    </div>
+  );
 }
