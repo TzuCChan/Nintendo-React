@@ -6,3 +6,14 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Characters from "./components/Characters";
 import Character from "./components/Character";
+
+function App() {
+  const [data, setData] = useState([]);
+
+  const getData = async () => {
+    const response = await axios.get(
+      "https://amiiboapi.com/api/amiibo/?gameseries=Super Mario"
+    );
+    setData(response.data.amiibo);
+  };
+}
