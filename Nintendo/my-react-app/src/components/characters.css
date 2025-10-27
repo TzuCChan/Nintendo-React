@@ -8,3 +8,8 @@
 .name-container, .character-container{
   margin-top: 45px;
 }
+
+.image-container{
+  display:flex;
+  justify-content: center;
+}
