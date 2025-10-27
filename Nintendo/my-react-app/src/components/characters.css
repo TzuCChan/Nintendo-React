@@ -4,3 +4,7 @@
   background-color: red;
   color: white
 }
+
+.name-container, .character-container{
+  margin-top: 45px;
+}
