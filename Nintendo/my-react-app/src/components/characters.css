@@ -27,3 +27,15 @@
   align-items: center;
   display: grid;
 }
+
+img {
+  height: 300px
+}
+
+.character-btn{
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
