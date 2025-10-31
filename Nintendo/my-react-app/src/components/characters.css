@@ -20,3 +20,10 @@
   grid-row-gap: 45px;
   grid-column-gap: 10px;
 }
+
+.characters{
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: grid;
+}
