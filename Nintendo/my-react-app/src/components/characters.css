@@ -39,3 +39,11 @@ img {
   padding: 5px;
   margin-bottom: 20px;
 }
+
+.nav-btn{
+  background-color: brown;
+  color: white;
+  font-family: 'Rock Salt', cursive;
+  font-size: medium;
+  font-weight: bold;
+}
