@@ -47,3 +47,8 @@ img {
   font-size: medium;
   font-weight: bold;
 }
+
+.btn-container{
+  display: flex;
+  justify-content: space-evenly;
+}
