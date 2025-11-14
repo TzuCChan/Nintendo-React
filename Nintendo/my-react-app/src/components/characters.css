@@ -56,3 +56,10 @@ img {
 body{
   background-image: url("../../public/marioClouds.png");
 }
+
+.title{
+  font-family: 'Rampart One', cursive;
+  font-size: 100px;
+  margin-bottom: 20px;
+  color: red;
+}
