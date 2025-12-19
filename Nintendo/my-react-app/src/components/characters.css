@@ -70,3 +70,12 @@ body{
   align-items: center;
   margin-top: 20px;
 }
+
+.intro {
+  background-color: whitesmoke;
+  margin-left: 40px;
+  margin-right: 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-family: 'Rock Salt', cursive;
+}
